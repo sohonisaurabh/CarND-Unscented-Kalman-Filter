@@ -25,7 +25,7 @@ Following goals were achieved as a part of implementation:
 
 1. Build the state vector and the state transition matrix. Derive state transition equation. This represents the deterministic part of motion model. Stochastic part of motion is represented by νak (For magnitude of acceleration) and νpsik (For yaw acceleration or the change in yaw rate). The state transition equation then derived is shown below:
 
-![CTRV model state transition equation](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/CTRV-state-transition-equation.png)
+![CTRV model state transition equation](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/ctrv-state-transition-equation.png)
 
 where the noise is modelled by assuming Gaussian noise with zero mean and standard deviation. Hence, standard deviations are σa (For magnitude of acceleration) and σyaw (For yaw acceleration). This is shown below:
 
@@ -33,7 +33,7 @@ where the noise is modelled by assuming Gaussian noise with zero mean and standa
 
 2. LIDAR measures the distance between self driving car and an object in X and Y axis. Hence, the measurement function for LASER updates, given by H_laser, is a linear transform shown below:
 
-![LASER measurement function](https://raw.githubusercontent.com/sohonisaurabh/CarND-Extended-Kalman-Filter/master/image-resources/H_laser.png)
+![LASER measurement function](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/H_laser.png)
 
 3. RADAR measures the radial distance, the bearing (or angle of orientation w.r.t car) and the radial velocity. This is represented below:
 
