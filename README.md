@@ -73,9 +73,9 @@ Hence, the measurement function for RADAR updates, given by H_radar, is a non-li
 
 3. Calculate and capture the Normalized Innovation Squared (NIS) for LASER and RADAR. Plot the values and check for consistency. If not consistent, tune the process noise parameters σa and σyaw. The final tuned values for σa was 2 m/s2 and σyaw was 2 rad/s2. This resulted in NIS distributions shown below:
 
-![LASER NIS distribution](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/ukf-nis-laser-dataset-1.png.png)
+![LASER NIS distribution](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/ukf-nis-laser-dataset-1.png)
 
-![RADAR NIS distribution](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/ukf-nis-radar-dataset-1.png.png)
+![RADAR NIS distribution](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/ukf-nis-radar-dataset-1.png)
 
 4. Take a note of RMSE values at the last time step of dataset. Minimize the RMSE to bring it in the range of RMSE <= [.09, .10, 0.40, 0.30] for px, py, vx and vy respectively. RMSE values achieved after fine minimization are shown below:
 
