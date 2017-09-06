@@ -12,6 +12,7 @@ using namespace std;
 // for convenience
 using json = nlohmann::json;
 
+// This is created as a global variable for saving NIS values after each time step
 ofstream output_nis;
 
 // Checks if the SocketIO event has JSON data.
@@ -148,7 +149,7 @@ int main(int iArgC, char** iArgV)
     	  VectorXd RMSE = tools.CalculateRMSE(estimations, ground_truth);
 	  float nis = ukf.GetNIS();
 	  float current_time_stamp_sec = meas_package.timestamp_/pow(10.0, 4);
-    cout<<"NIS is: "<<nis;
+    cout<<"NIS is: "<<nis<<endl;
     output_nis<<meas_package.sensor_type_<<setw(20);
 	  output_nis<<current_time_stamp_sec<<setw(20);
 	  output_nis<<nis<<setw(20)<<endl;
