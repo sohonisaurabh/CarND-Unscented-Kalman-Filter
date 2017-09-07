@@ -31,9 +31,7 @@ where the noise is modelled by assuming Gaussian noise with zero mean and standa
 
 ![CTRV process noise modelled as Gaussian](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/ctrv-noise-modelling.png)
 
-2. LIDAR measures the distance between self driving car and an object in X and Y axis. Hence, the measurement function for LASER updates, given by H_laser, is a linear transform shown below:
-
-![LASER measurement function](https://raw.githubusercontent.com/sohonisaurabh/CarND-Unscented-Kalman-Filter/master/image-resources/H_laser.png)
+2. LIDAR measures the distance between self driving car and an object in X and Y axis. Hence, the measurement function for LASER updates, given by H_laser, is a linear transform.
 
 3. RADAR measures the radial distance, the bearing (or angle of orientation w.r.t car) and the radial velocity. This is represented below:
 
